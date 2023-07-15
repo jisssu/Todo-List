@@ -1,0 +1,72 @@
+.hidden {
+    display: none;
+}
+
+* {
+    font-family: 'Poor Story', cursive;
+}
+
+body {
+    height: 100%;
+    width: 50%;
+    padding: 10%;
+    box-sizing: border-box; 
+}
+/*즉, 내가 만약 이 box의 너비나 높이를 설정하려면 예를 들어, 단순히 width: 50px; 혹은 height: 50px; 를 줄 수 있지만,
+ 거기에 border 값이나 padding 값이 더 해져야 한다면 width값은 50px이 아닌 50px + (border값 혹은 padding값) 이상이 될 것이다.
+ 반면에, box-sizing: border-box;에 border나 padding을 추가하면 해당 box의 크기는 그만큼 더 커지지 않고 사용자가 지정한 너비나 높이만큼 길이에 맞추게 된다.
+ border값이나 padding 값는 지정한  width값이나 height값에 포함이 된다는 것이다. */
+
+
+.container {
+    background-color: beige;
+    width: 70%;
+    padding: 22px;
+    margin: 0 auto;
+    border: 2px solid rgb(125, 96, 56);
+    box-shadow: 0px 4px 3px 5px black;  /*x y blur spread*/
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    word-break: break-all;
+}
+
+.Login-Form input {
+    font-size: 20px;
+    background-color: transparent;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+.Hi {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.Today {
+    order: -1;
+    align-self: flex-end;
+}
+
+.toDo-Form input {
+    font-size: 20px;
+    background-color: transparent;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+.toDo-List {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+    .toDo-List button {
+        border: none;
+        background-color: transparent;
+ }
